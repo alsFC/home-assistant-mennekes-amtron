@@ -1,0 +1,37 @@
+"""Constants for Mennekes AMTRON Professional."""
+from datetime import timedelta
+
+DOMAIN = "mennekes_amtron"
+PLATFORMS = ["sensor", "select", "number", "button"]
+
+CONF_UNIT_ID = "unit_id"
+CONF_RFID_COMPANY = "rfid_company"
+CONF_RFID_GUEST = "rfid_guest"
+
+DEFAULT_PORT = 502
+DEFAULT_UNIT_ID = 1
+DEFAULT_FAST_INTERVAL = 10
+
+REG_FIRMWARE = 100
+REG_OCPP_STATUS = 104
+REG_VEHICLE_STATE = 122
+REG_CP_AVAILABILITY = 124
+REG_SAFE_CURRENT = 131
+REG_OPERATOR_CURRENT_LIMIT = 134
+REG_PLUG_LOCK_STATUS = 152
+REG_METER_START = 212
+REG_METER_COUNT = 16
+REG_TOTAL_POWER = 220
+REG_SESSION_START = 715
+REG_SESSION_COUNT = 15
+REG_HEMS_CURRENT_LIMIT = 1000
+REG_WRITE_IDTAG_START = 1110
+
+METER_INTERVAL = timedelta(seconds=60)
+SESSION_INTERVAL = timedelta(seconds=60)
+STATUS_INTERVAL = timedelta(seconds=60)
+VEHICLE_INTERVAL = timedelta(seconds=30)
+HEMS_INTERVAL = timedelta(seconds=60)
+GENERAL_STATUS_INTERVAL = timedelta(minutes=5)
+CURRENT_LIMITS_INTERVAL = timedelta(hours=1)
+FIRMWARE_INTERVAL = timedelta(days=1)

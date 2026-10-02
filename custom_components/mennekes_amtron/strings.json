@@ -1,0 +1,138 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mennekes AMTRON Professional",
+        "description": "Connect to the AMTRON via Modbus TCP.",
+        "data": {
+          "host": "Host",
+          "port": "Port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the wallbox.",
+      "unknown": "Unexpected error."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "RFID authorization",
+        "description": "Configure the two IDTags used for authorization. Values are written only when you use the RFID Authorization select.",
+        "data": {
+          "rfid_company": "Company car IDTag",
+          "rfid_guest": "Guest IDTag"
+        }
+      }
+    },
+    "error": {
+      "invalid_rfid": "IDTag must contain at most 20 ASCII characters."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_total_power": {
+        "name": "Meter total power"
+      },
+      "vehicle_state": {
+        "name": "Vehicle state",
+        "state": {
+          "disconnected": "Available",
+          "connected": "Vehicle connected",
+          "charging": "Charging"
+        }
+      },
+      "ocpp_cp_status": {
+        "name": "OCPP CP status",
+        "state": {
+          "available": "Available",
+          "occupied": "Occupied",
+          "reserved": "Reserved",
+          "unavailable": "Unavailable",
+          "faulted": "Faulted",
+          "preparing": "Preparing",
+          "charging": "Charging",
+          "suspended_evse": "Suspended by wallbox",
+          "suspended_ev": "Suspended by vehicle",
+          "finishing": "Finishing"
+        }
+      },
+      "meter_current_l1": {
+        "name": "Current L1"
+      },
+      "meter_current_l2": {
+        "name": "Current L2"
+      },
+      "meter_current_l3": {
+        "name": "Current L3"
+      },
+      "meter_total_energy": {
+        "name": "Meter total energy"
+      },
+      "meter_voltage_l1": {
+        "name": "Voltage L1"
+      },
+      "meter_voltage_l2": {
+        "name": "Voltage L2"
+      },
+      "meter_voltage_l3": {
+        "name": "Voltage L3"
+      },
+      "ev_max_current": {
+        "name": "EV maximum current"
+      },
+      "ev_charged_energy": {
+        "name": "Charged energy"
+      },
+      "ev_charge_duration": {
+        "name": "Charge duration"
+      },
+      "active_id_tag": {
+        "name": "Active ID tag"
+      },
+      "firmware": {
+        "name": "Firmware"
+      },
+      "cp_availability": {
+        "name": "CP availability",
+        "state": {
+          "unavailable": "Unavailable",
+          "available": "Available"
+        }
+      },
+      "safe_current": {
+        "name": "Safe current"
+      },
+      "operator_current_limit": {
+        "name": "Operator current limit"
+      },
+      "plug_lock_status": {
+        "name": "Plug lock status",
+        "state": {
+          "unlocked": "Unlocked",
+          "locked": "Locked"
+        }
+      }
+    },
+    "select": {
+      "rfid_authorization": {
+        "name": "RFID authorization",
+        "state": {
+          "Firmenwagen": "Company car",
+          "Fremd": "Guest"
+        }
+      }
+    },
+    "number": {
+      "hems_current_limit": {
+        "name": "HEMS current limit"
+      }
+    },
+    "button": {
+      "send_rfid_authorization": {
+        "name": "Send RFID authorization"
+      }
+    }
+  }
+}

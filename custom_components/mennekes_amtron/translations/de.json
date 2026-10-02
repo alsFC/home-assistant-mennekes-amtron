@@ -1,0 +1,138 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mennekes AMTRON Professional",
+        "description": "Verbindung zur AMTRON über Modbus TCP herstellen.",
+        "data": {
+          "host": "IP-Adresse / Host",
+          "port": "Port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zur Wallbox nicht möglich.",
+      "unknown": "Unerwarteter Fehler."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "RFID-Autorisierung",
+        "description": "Die beiden IDTags für die Autorisierung konfigurieren. Geschrieben wird erst bei Auswahl über „RFID Authorization“.",
+        "data": {
+          "rfid_company": "IDTag Firmenwagen",
+          "rfid_guest": "IDTag Fremd"
+        }
+      }
+    },
+    "error": {
+      "invalid_rfid": "Die IDTag darf höchstens 20 ASCII-Zeichen enthalten."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_total_power": {
+        "name": "Gesamtleistung"
+      },
+      "vehicle_state": {
+        "name": "Fahrzeugstatus",
+        "state": {
+          "disconnected": "Verfügbar",
+          "connected": "Fahrzeug verbunden",
+          "charging": "Lädt"
+        }
+      },
+      "ocpp_cp_status": {
+        "name": "OCPP-Status",
+        "state": {
+          "available": "Verfügbar",
+          "occupied": "Belegt",
+          "reserved": "Reserviert",
+          "unavailable": "Nicht verfügbar",
+          "faulted": "Störung",
+          "preparing": "Vorbereitung",
+          "charging": "Lädt",
+          "suspended_evse": "Durch Wallbox pausiert",
+          "suspended_ev": "Durch Fahrzeug pausiert",
+          "finishing": "Wird beendet"
+        }
+      },
+      "meter_current_l1": {
+        "name": "Strom L1"
+      },
+      "meter_current_l2": {
+        "name": "Strom L2"
+      },
+      "meter_current_l3": {
+        "name": "Strom L3"
+      },
+      "meter_total_energy": {
+        "name": "Gesamtenergie"
+      },
+      "meter_voltage_l1": {
+        "name": "Spannung L1"
+      },
+      "meter_voltage_l2": {
+        "name": "Spannung L2"
+      },
+      "meter_voltage_l3": {
+        "name": "Spannung L3"
+      },
+      "ev_max_current": {
+        "name": "Maximaler Ladestrom"
+      },
+      "ev_charged_energy": {
+        "name": "Geladene Energie"
+      },
+      "ev_charge_duration": {
+        "name": "Ladedauer"
+      },
+      "active_id_tag": {
+        "name": "Aktive RFID-ID"
+      },
+      "firmware": {
+        "name": "Firmware"
+      },
+      "cp_availability": {
+        "name": "CP-Verfügbarkeit",
+        "state": {
+          "unavailable": "Nicht verfügbar",
+          "available": "Verfügbar"
+        }
+      },
+      "safe_current": {
+        "name": "Sicherheitsstrom"
+      },
+      "operator_current_limit": {
+        "name": "Betreiber-Stromlimit"
+      },
+      "plug_lock_status": {
+        "name": "Stecker-Verriegelungsstatus",
+        "state": {
+          "unlocked": "Entriegelt",
+          "locked": "Verriegelt"
+        }
+      }
+    },
+    "select": {
+      "rfid_authorization": {
+        "name": "RFID-Autorisierung",
+        "state": {
+          "Firmenwagen": "Firmenwagen",
+          "Fremd": "Fremd"
+        }
+      }
+    },
+    "number": {
+      "hems_current_limit": {
+        "name": "HEMS-Stromlimit"
+      }
+    },
+    "button": {
+      "send_rfid_authorization": {
+        "name": "RFID-Autorisierung senden"
+      }
+    }
+  }
+}
