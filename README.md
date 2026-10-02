@@ -16,12 +16,12 @@ An independent custom integration for local monitoring and control of MENNEKES A
 
 ## Installation with HACS
 
-1. In GitHub, create a public repository named **`home-assistant-mennekes-amtron`** under the account `asFC`.
+1. In GitHub, create a public repository named **`home-assistant-mennekes-amtron`** under the account `alsFC`.
 2. Upload the contents of this repository so that `custom_components/mennekes_amtron/` is directly in the repository root.
 3. Publish a GitHub Release named/tagged `v0.2.7.1`.
 4. In Home Assistant, open **HACS → Integrations**.
 5. Open the HACS menu and choose **Custom repositories**.
-6. Add `https://github.com/asFC/home-assistant-mennekes-amtron` and select **Integration** as the category.
+6. Add `https://github.com/alsFC/home-assistant-mennekes-amtron` and select **Integration** as the category.
 7. Find **Mennekes AMTRON Professional** in HACS and install it.
 8. Restart Home Assistant. If the integration is already installed manually, keep the existing integration entry; do not remove/re-add it just for the HACS migration.
 9. If HACS reports that the integration is already present, use the existing files/repository entry and follow the update/reload instructions shown by HACS.
@@ -40,7 +40,7 @@ The wallbox must be reachable from Home Assistant over Modbus TCP. The default M
 
 ## Support and bug reports
 
-Please open an issue in the [GitHub issue tracker](https://github.com/asFC/home-assistant-mennekes-amtron/issues). Include your Home Assistant version, integration version, relevant logs, and a description of the expected and actual behavior. Remove credentials, RFID values, and other private information from logs before posting.
+Please open an issue in the [GitHub issue tracker](https://github.com/alsFC/home-assistant-mennekes-amtron/issues). Include your Home Assistant version, integration version, relevant logs, and a description of the expected and actual behavior. Remove credentials, RFID values, and other private information from logs before posting.
 
 ## License
 
