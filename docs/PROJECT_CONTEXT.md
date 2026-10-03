@@ -85,14 +85,6 @@ Plug-lock status is a normal sensor, not a diagnostic entity. The diagnostic ent
 - Recorder exclusions were set for `sensor.amtron_professional_meter_current*` and `sensor.amtron_professional_meter_voltage*`. Total power was intentionally not excluded.
 - An unrelated Uptime Kuma status entity with a similar Mennekes name was noted; do not confuse it with entities created by this integration.
 
-## Development environment / operational caution
-
-- Home Assistant runs on an Odroid N2 with approximately 3.7 GiB RAM.
-- Home Assistant has previously experienced out-of-memory restarts (exit code 137); memory usage was high.
-- The Studio Code Server add-on version 7.0.0 was stopped because it was associated with memory pressure/restarts.
-- Prefer developing in VS Code on the user's PC, not by leaving VS Code Server running on the Home Assistant host.
-- Test changes on the live wallbox cautiously, especially write controls. Never include actual IP addresses, credentials, RFID IDs, tokens or other private configuration values in this public repository.
-
 ## Repository and release history notes
 
 The integration was iterated through versions 0.2.6.1, 0.2.7, 0.2.7.1 and subsequent releases:
