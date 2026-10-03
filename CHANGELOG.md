@@ -9,9 +9,26 @@ The entries below are based on the available development notes and repository st
 - Add future changes, fixes, and test results here as they are made.
 - Record validation performed and clearly distinguish static checks from tests against a physical wallbox.
 
+## [0.3.0.0] - 2026-10-03
+
+### Added
+- Added persistent project context in `docs/PROJECT_CONTEXT.md`.
+- Added local development, validation and release guidance in `docs/DEVELOPMENT.md`.
+- Added `AGENTS.md` with project-specific guidance for AI coding assistants.
+- Added this changelog to track release notes and distinguish static validation from physical wallbox testing.
+
+### Changed
+- Updated the integration version in `custom_components/mennekes_amtron/manifest.json` from `0.2.7.3` to `0.3.0.0`.
+- Established a documented development workflow using local VS Code, Git, the GitHub repository and the ChatGPT GitHub connector.
+
+### Validation
+- Confirmed the GitHub connector can read the repository and its README and manifest.
+- No code behavior changes are intended by this initial development-environment release.
+- No new automated test run or physical wallbox test is claimed for this release.
+
 ## [0.2.7.3]
 
-- Version reported by `custom_components/mennekes_amtron/manifest.json` when this changelog was created.
+- Version reported by `custom_components/mennekes_amtron/manifest.json` before the 0.3.0.0 version update.
 - The precise changes for this version have not yet been confirmed from release notes or commit history.
 
 ## [0.2.7.2]
