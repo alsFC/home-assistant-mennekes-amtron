@@ -10,7 +10,7 @@ This document preserves the project's technical context and decisions so develop
 - Owner/codeowner: `alsFC`
 - Communication: local Modbus TCP, normally port 502
 - Integration setup uses a config flow; the integration depends on Home Assistant's Modbus integration.
-- Current version: read `version` from `custom_components/mennekes_amtron/manifest.json`. At the time this context file was created, the repository manifest reported **0.2.7.3**. Always verify the file rather than relying on this note.
+- Current version: read `version` from `custom_components/mennekes_amtron/manifest.json`. At the time of the 0.3.0.0 release setup on 2026-10-03, the manifest was updated to **0.3.0.0**. Always verify the file rather than relying on this note.
 
 ## Main functionality
 
@@ -92,7 +92,7 @@ The integration was iterated through versions 0.2.6.1, 0.2.7, 0.2.7.1 and subseq
 - 0.2.7: filtered implausible total-power readings without overwriting the last valid value.
 - 0.2.7.1: plug-lock status was moved out of the diagnostic category.
 - 0.2.7.2: corrected repository metadata URLs and bumped the version.
-- The repository manifest currently reports 0.2.7.3 at the time this document was written; inspect Git history/releases to determine the exact contents of that release rather than inferring its change from the version alone.
+- Version 0.3.0.0 establishes the initial documented ChatGPT–GitHub development workflow and project documentation. This release does not claim new wallbox behavior; inspect the changelog and Git history for details.
 
 ## Working conventions
 
